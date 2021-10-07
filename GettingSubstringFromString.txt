@@ -1,0 +1,9 @@
+# Many times we need to get a substring from a string and python has the methods to do it. the format is string(start:stop:step)
+
+#The start agrument tells it the starting index(default zero).The stop tellsit the last index (its length) where it shoudl break the string.  The step tells it how many characters it shoudl leave (default 1) to return the new sliced list.
+
+string = 'I am a string'
+print(string[0:1]) # prints 'I'
+print(string[0:4]) # prints 'I am'
+# 👇👇 remember python follows zero based indexing
+print(string[2:13]) # prints 'am a string'

@@ -1,0 +1,5 @@
+# Use sets() to check if there are duplicate items in a list. 
+
+myList = ['Item1', 'Item2', 'Item1']
+print(len(myList) != len(set(myList))) # True
+ 

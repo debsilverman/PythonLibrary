@@ -1,0 +1,7 @@
+#Get all the voewels from a string
+
+def GetVowels(string):
+    vowels = [each for each in string if each in 'aeiou']
+    print(vowels)
+
+GetVowels('Getting Vowels from string')

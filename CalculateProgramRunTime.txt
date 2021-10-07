@@ -1,0 +1,19 @@
+# Python timeit module is a method in the python library that is used to measure the execution time taken  by the given code snippet:
+
+import timeit
+
+start = timeit.default_timer()
+
+# My code goes here
+total = 0
+for i in range(10):
+  total += i
+print("Sum:" ,total)
+#--------------
+
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)  
+
+
+# The default_timer() will return the time when it is exectured.  first we get the time when the script was executed then we did our code, followed by using it again and subtracted it from it. 

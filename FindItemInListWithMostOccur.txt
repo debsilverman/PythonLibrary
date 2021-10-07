@@ -1,0 +1,9 @@
+# The set() is an unordered collection of items.  A set is mutable (can be changed) and 'cannot have any duplicate values'.  A set is created by placing all the items (elements) inside curly braces {} and separated by a comma. 
+
+def most_frequent(list):
+  return max(set(list), key=list.count)
+
+mylist = [1,1,2,3,4,5,5,1,2,1,]
+print("Item with the most frequency: ", most_frequent(mylist))
+
+# Make a set of the list so that the duplicate elementes are deleted. then find the highest count of occurrences of each element in the set and thus, we find the maximum out of it. 

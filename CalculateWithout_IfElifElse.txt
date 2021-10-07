@@ -1,0 +1,11 @@
+# The operator module exports a set of efficient funcitons corresponding to the intrunsic operators of python. 
+
+import operator
+action = {
+    "+": operator.add,
+    "-": operator.sub,
+    "/": operator.truediv,
+    "*": operator.mul,
+    "**": pow
+}
+print(action['+'](60, 25)) # 85

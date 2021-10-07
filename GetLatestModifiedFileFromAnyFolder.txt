@@ -1,0 +1,28 @@
+# when working in python it's common doubt how to get the latest edited of created file ofrom any folder within the system.  so, this code
+
+import os.path
+import os
+import glob
+
+# C:/Users/jainh
+home = os.path.expanduser("~").replace('\\','/')
+
+# It gives us the latest edited folder ; Output: Downloads
+latest_edited_folder = max([f for f in os.scandir(home)], key=lambda x: x.stat().st_mtime).name
+
+# Combine our home directory + our 'latest_edited_folder' + add '/*'
+search_on = home+'/'+latest_edited_folder+'/*'
+
+# return all file paths that match ojr pattern 
+list_of_files = glob.glob(search_on) 
+
+# It gives us the latest edited file
+latest_file = max(list_of_files, key=os.path.getctime)
+
+# Print it ; Output: C:/Users/jainh/Downloads\MyrecentFIle.docs
+print(latest_file)
+
+## what is glob module? glob stands for global and it is used to look for a list of files inthe filesystem with names matching a specific pattern.  In our case we looked for files on  the very recently edited folder (list_of_files = glob.glob(search_on)
+
+## what is os.path.expanduser?  it is used to expand a user's home directlry using the ~ (tilde) symbol.  This works on any platform where users have a home directory. For more info about os.scandir method https://www.geeksforgeeks.org/python-os-scandir-method/
+

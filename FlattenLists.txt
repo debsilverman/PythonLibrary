@@ -1,0 +1,12 @@
+# Flattending a list menas converting a nested list into a one-dimensional list. for example convert [[1,2],[3,4,5]] [1,2,3,4,5] requires deep flattening.  In deep flattening the process undergoes multiple levels of depths to create a flattened list using a modeul iteration_utilities. Iteration_utilities will nbeed to be installed if not already using pip install iteration-utilities
+
+from iteration_utilities import deepflatten
+
+multi_depth_list = [[0,1], [[2]], [3,4]]
+
+flatten_list = list(deepflatten(multi_depth_list))
+
+print(flatten_list)
+
+
+#There are various other methods too like recursion, shallow flattening, using NumPy. etc.

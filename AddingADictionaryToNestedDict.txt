@@ -1,0 +1,21 @@
+# An important point to note here is that when adding items to a nested dictionary, a nested dicutionary should be there in the dictionary unlike when we add items to the dictionary.  The syntax to add elemenets to a nested dictionary is 
+
+mydict["AlreadyAddedKey"]["key"]=["value"]
+
+# We add a dictionarty to a nested dictionary by putting square brakcets in which the already added key (in which we want to place thei disctionary) is added which is followed by our custom key and value.  
+
+MyDict = {
+    "info1": {"First name": "Name", "LastName": "LastName"},
+    "info2": {"First name": "Name1", "LastName": "LastName1"},
+    "info3": {"First name": "Name2", "LastName": "LastName2"},
+}  # Create a Default value dict(for example)
+
+MyDict["info3"] = {}  # Create a key "info3" with emtpy dictionary as a value
+
+# Add a Key-value pair of "FirstName" and "Name2" of the key "info3"
+MyDict["info3"]["First name"] = "Name2" 
+
+# Adds a Key-value pair of "LastName" and "LastName2" of the key "info3"
+MyDict["info3"]["LastName"] = "LastName2" 
+
+print(MyDict) # 

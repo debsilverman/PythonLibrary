@@ -1,0 +1,14 @@
+# return the identity of an object.  this identity has to be unique and contant for this object durin the lifetime.  two objects with non-overlapping lifetimes may gev the same id() value.  This function is generally used interanlly in python.
+
+import sys 
+
+var = 10 
+print(sys.getsizeof(var)) # 28
+
+str2 = "geek"
+print(id(str2)) # 1872287986800
+
+listofItems = ["List1Item", "ListItem2", "ListItem3"]
+print(id(listofItems[0])) # 1872287998192
+print(id(listofItems[1])) # 1872287982576
+print(id(listofItems[2])) # 1872287998128

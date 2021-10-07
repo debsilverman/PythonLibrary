@@ -1,0 +1,21 @@
+# use the for loop
+#  for every_item in sequence:     
+#  {Code to be exicuted with 'every_item'}
+
+# Looping through only keys of a dictionary
+
+MyDict = {
+    "FirstName":"Default1",
+    "LastName":"Default2"
+}
+for x in MyDict.keys():
+    print(x) # Output: FirstName \n LastName
+
+# Looping through only values of a dictionary
+
+MyDict = {
+    "FirstName":"Default1",
+    "LastName":"Default2"
+}
+for x in MyDict.values():
+    print(x) # Ouutput: Default1 \n Default2

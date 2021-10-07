@@ -1,0 +1,8 @@
+# for key, value in menas that for each key in the dictionary and for each value in the dictionary do something (i.e. print)
+
+MyDict = {
+    "FirstName":"Default1",
+    "LastName":"Default2"
+}
+for key,value in MyDict.items():
+    print(key + ':' + value)

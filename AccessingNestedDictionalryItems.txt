@@ -1,0 +1,14 @@
+# Accessing elements of a nested dictionary is almost the same as accessing items from a simple dictionary.  Like we get items from a simple dictionary using square brackets(in which key is there), here we instead add one more pair of brackets (in which key of the nested dictionary is there) to get the elements of the nested dictionary.
+
+NestedDict = {
+  'A':{1:"decodebuzzing",2:".",3:"com"},
+  'B':{1:"visit",2:"decodebuzzing",3:".com"}
+}
+
+print(NestedDict['A'][1]) # prints decodebuzzing
+print(NestedDict['A'][2]) # prints .
+print(NestedDict['A'][3]) # prints com
+
+print(NestedDict['B'][1]) # prints visit
+print(NestedDict['B'][2]) # prints decodebuzzing.com
+print(NestedDict['B'][3]) # prints .com

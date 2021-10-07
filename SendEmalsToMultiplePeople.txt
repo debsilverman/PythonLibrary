@@ -1,0 +1,13 @@
+# Use the for loop to send gmail to multiple people instead of 1 by 1 using python. create list of gmails and then create a for loop  in between the intialization and termination of the smtp session.
+
+import smtplib
+  
+ReceiversList = ["abcd@gmail.com", "efgh@gmail.com", "hijk@gmail.com"]
+  
+for user in ReceiversList:
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login("YourEmailId@gmail.com", "YourEmailpassword")
+    message = "I am spamming you with gmails hehe😅😅"
+    s.sendmail("sender_email_id", user, message)
+    s.quit()

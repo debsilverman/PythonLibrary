@@ -1,0 +1,11 @@
+# A for-loop is used for iterating over a squence. it simply menas to do soemthing with every item in a sequence. 
+
+for x in "I love decodebuzzing.com":
+  print(x)
+
+# we can also skip the current iteration of the loop and continue with the next using the continue statement. Lets skip the letter 'l' while iterating.
+
+ for x in "I love decodebuzzing.com":
+  if x == 'l':
+        continue
+  print(x)

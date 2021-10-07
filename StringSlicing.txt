@@ -1,0 +1,11 @@
+# An index tells the position of the first occurence of the specified value in a list of a string.  Python follows zero-based indexing, so the first string in Hello is H = 0.
+
+# if we want to get an index of a character in  a string in python, we can do this using square brackets '[]'
+
+string = 'I am a string'
+
+print(string[0]) # prints 'I'
+print(string[1]) # prints space(empty beacuse there was a space)
+print(string[2]) # prints 'a'
+print(string[3]) # prints 'm'
+# Goes on -------
